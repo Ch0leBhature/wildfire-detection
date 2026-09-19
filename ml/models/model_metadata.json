@@ -1,0 +1,69 @@
+{
+  "model_version": "1.0.0",
+  "model_type": "xgboost",
+  "feature_names": [
+    "temperature_current",
+    "humidity_current",
+    "wind_speed_current",
+    "rainfall_1d",
+    "rainfall_3d",
+    "rainfall_7d",
+    "rainfall_30d",
+    "ndvi",
+    "ndmi",
+    "elevation",
+    "slope",
+    "land_cover"
+  ],
+  "feature_count": 12,
+  "risk_thresholds": {
+    "low": 0.3,
+    "moderate": 0.6,
+    "high": 0.8
+  },
+  "training_period": {
+    "start": "2019-01",
+    "end": "2023-12"
+  },
+  "evaluation_metrics": {
+    "roc_auc": 0.850651,
+    "f1": 0.158852,
+    "precision": 0.095732,
+    "recall": 0.466292
+  },
+  "baseline_metrics": {
+    "logistic_regression": {
+      "roc_auc": 0.87672,
+      "f1": 0.110265,
+      "precision": 0.058938,
+      "recall": 0.853933
+    },
+    "random_forest": {
+      "roc_auc": 0.853682,
+      "f1": 0.144832,
+      "precision": 0.082028,
+      "recall": 0.617978
+    }
+  },
+  "class_distribution": {
+    "positive": 895,
+    "negative": 47105
+  },
+  "training_samples": 38400,
+  "validation_samples": 9600,
+  "feature_importance": {
+    "temperature_current": 0.0974,
+    "humidity_current": 0.0675,
+    "wind_speed_current": 0.0499,
+    "rainfall_1d": 0.0616,
+    "rainfall_3d": 0.1212,
+    "rainfall_7d": 0.2174,
+    "rainfall_30d": 0.0684,
+    "ndvi": 0.0576,
+    "ndmi": 0.0527,
+    "elevation": 0.048,
+    "slope": 0.0497,
+    "land_cover": 0.1086
+  },
+  "created_at": "2026-09-17T17:20:13.133724"
+}
