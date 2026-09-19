@@ -1,4 +1,4 @@
-# 🔥 Geospatial Wildfire Risk Detection
+# Geospatial Wildfire Risk Detection
 
 AI-powered wildfire risk assessment system using machine learning, satellite remote sensing, and real-time weather data. Estimates wildfire risk for user-selected areas of up to 100 km radius using XGBoost classification, Google Earth Engine-derived features, and NASA FIRMS fire observations.
 
